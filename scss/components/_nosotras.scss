@@ -52,18 +52,15 @@
         }
     }    
 }
-
 /*Fin descripción TICSI*/
 
 /*Inicio descripción nosotras*/
 .descripcion-miembros-container {
-    font-size: 1rem;
-    margin-bottom: 8rem;
     h2 {
         margin-top: 2rem;
     }
     .descripcion-miembros {
-        display: flex;
+        display: flex;   
         .fotos-miembros-container {
             width: 10rem;
             margin-right: 1rem;

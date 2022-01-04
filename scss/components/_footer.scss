@@ -1,12 +1,12 @@
 @import '../base/variables';
+@import '../base/extends';
 
 /*Inicia footer*/
 footer {
-    margin-top: 2rem;
-    background-color: black;
+    margin-top: 50rem;
+    background-color: $bg-header-footer;
     .footer-container-general {
-        display: flex;
-        justify-content:center;
+        @extend %flex-center;        
         .footer-general {
             margin-right: 5rem;
             flex-wrap: wrap;
@@ -15,8 +15,7 @@ footer {
             /*Media queries footer-sm*/
             @media screen and (max-width:576px) {
                 margin-right: 0rem;
-            }            
-
+            }        
             .fab, .fas {
                 font-size: 1.5rem;
                 color: $color-texto-menu;
@@ -32,7 +31,7 @@ footer {
         }
 
         p {
-            color: white;
+            color: $color-texto-footer;
             font-size: 0.9rem;
             margin-bottom: 0;
             align-self: center;
@@ -41,14 +40,10 @@ footer {
             @media screen and (max-width:768px) {
                 font-size: 0.6rem;
             }
-
             /*Media queries derechos reservados-sm*/
             @media screen and (max-width:576px) {
                 text-align: center;
             }
-
-
-
         }
     }
 }

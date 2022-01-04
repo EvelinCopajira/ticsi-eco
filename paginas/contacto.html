@@ -14,17 +14,17 @@
   <!-- META-DESCRIPCIÓN -->
   <meta name="description" content="TICSI es un emprendimiento de productos para cuidados faciales y fabricamos de velas y floreros.">
 
-  <!-- OPEN GRAPH-->
-  <meta property="og:type" content="Ecommerce">
-
   <!-- OPEN GRAPH TÍTULO -->
   <meta property="og:title" content="TICSI">
+
+  <!-- OPEN GRAPH-->
+  <meta property="og:type" content="website">
 
   <!-- OPEN GRAPH DESCRIPCIÓN -->
   <meta property="og:description" content="TICSI es un emprendimiento de productos para cuidados faciales y de fabricación de velas y floreros">
 
   <!-- OPEN GRAPH IMÁGEN -->
-  <meta property="og:Image" content="../multimedia/fotos/logo-tisci-rustic.png">
+  <meta property="og:image" content="multimedia/fotos/logo-tisci-rustico.png">
 
   <!-- OPEN GRAPH SITE NAME -->
   <meta property="og:site_name" content="TICSI">
@@ -33,7 +33,7 @@
   <meta property="og:autor" content="Evelin Copajira">
 
   <!-- OPEN GRAPH URL -->
-  <meta property="og:url" content="https://ticsi.com.ar">
+  <meta property="og:url" content="http://ticsi-eco.000webhostapp.com/index.html">
 
   <!-- FAVICON -->
   <link rel="shortcut icon" href="../multimedia/fotos/logo-tisci-rustico.png" type="logo-ticsi">
@@ -56,7 +56,7 @@
   <!-- inicio header -->
   <header>
     <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
-      <div class="container-fluid">
+      <section class="container-fluid">
         <!-- logo TICSI -->
         <a class="navbar-brand-ticsi" href="../index.html">
           <img src="../multimedia/fotos/logo-tisci-rustico.png" alt="img-logo-ticsi">
@@ -84,53 +84,63 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     </nav>
   </header>
   <!--fin header  -->
-
+  <!-- btn whpp -->
+  <div>
+    <a href="https://api.whatsapp.com/send?phone=+5491159966364" target="_blank" class="btn-whpp"><i class="fab fa-whatsapp"></i>></a>
+  </div>
+  <!-- fin btn whpp -->
   <!-- inicia el cuerpo de la sección "contacto" -->
   <main class="main-contacto">
     <!-- inicia datos de contacto -->
     <h1><span>CONTACTO</span></h1>
     <section class="contacto-container">
+    <!-- inicia formulario de contacto -->
+      <section class="formulario-contacto">
+        <h2>FORMULARIO</h2>
+        <form> 
+          <p>Nombre y Apellido:<input class="controls" type="text" name="nombres" id="datos-formulario" placeholder="Ingrese su nombre y apellido"></p>
+          <p>E-mail:<input class="controls" type="text" name="email" id="datos-formulario" placeholder="Ingrese su e-mail"></p>
+          <p>Teléfono:<input class="controls" type="email" name="telefono" id="datos-formulario" placeholder="Ingrese su teléfono"></p>
+          <p> Mensaje:</p>
+          <textarea name="mensaje" id="datos-formulario" cols="" rows="7" placeholder="Deja tu mensaje"></textarea>
+          <!-- btn-enviar-formulario -->
+          <input class="btn-formulario-ticsi" type="submit" value="Enviar">
+        </form>
+      </section>
+      <!-- fin del formulario de contacto -->
+      <!-- inicia datos de contacto -->
       <section>
         <h2>DATOS</h2>
         <div>
           <ul>
-            <li>+5411 59966365</li>
-            <li>contacto@ticsi-eco.com.ar</li>
+            <li>Teléfono de contacto: +5411 59966365</li>
+            <li>Mail de contacto: contacto@ticsi-eco.com.ar</li>
           </ul>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6759181095126!2d-58.40969368519589!3d-34.5870659641234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82e0bf845b%3A0x89a697afcf178755!2sJuncal%203001%2C%20C1425%20AYM%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1636507576351!5m2!1ses-419!2sar"
-            class="mapa-direccion" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div>
+            <h3>Ubicación</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6759181095126!2d-58.40969368519589!3d-34.5870659641234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82e0bf845b%3A0x89a697afcf178755!2sJuncal%203001%2C%20C1425%20AYM%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1636507576351!5m2!1ses-419!2sar"
+              class="mapa-direccion" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
         </div>
       </section>
       <!-- fin de los datos de contacto -->
-
-      <!-- inicia el formulario de contacto, al lado de cada li debería figurar un espacio para completar con parámetros definidos -->
-      <section class="formulario-contacto">
-        <h2>FORMULARIO</h2>
-        <ul>
-          <li>MAIL</li>
-          <li>NOMBRE Y APELLIDO</li>
-          <li>MOTIVO</li>
-          <li>DESCRIPCIÓN</li>
-        </ul>
-        <!-- fin del formulario de contacto -->
-      </section>
     </section>
-
   </main>
   <!-- fin del cuerpo de la sección "contacto" -->
 
   <!-- Inicio de pie de página -->
-  <footer>
+  <footer class="fixed-bottom">
     <div class="footer-container-general">
       <!-- redes -->
       <div class="footer-general">
-        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/evelin.copajira" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/ticsi.eco/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="mailto:contacto@ticsi-eco.com.ar?Subject=Consulta%20de%20productos"><i
             class="fas fa-envelope-open-text"></i></a>
       </div>

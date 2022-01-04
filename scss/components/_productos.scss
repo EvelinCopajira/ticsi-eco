@@ -3,6 +3,7 @@
 /*Inicio productos*/
 .productos-container {
     margin-top: 6rem;
+
     h2 {
         margin-top: 2rem;
     }
@@ -21,6 +22,7 @@
                 img {
                     width: 15rem;
                     height: 15rem;
+                    border-radius: 0.8rem;
                 }
             }            
             div {
@@ -31,7 +33,7 @@
             }   
             &:hover {
                 transform: scale(1.1);
-                background-color: $color-texto-menu;
+                background-color: lighten($color: $color-texto-menu, $amount: 10%);
                 padding: 0.8rem;
                 border-radius: 1rem;
             }
