@@ -4,6 +4,14 @@
 .main-contacto {
     margin-top: 6rem;
     .contacto-container {
+        display: flex;
+        justify-content: space-evenly;
+
+        /*Media queries wrap formulario y datos*/
+        @media screen and (max-width:1024px) {
+            flex-wrap: wrap;
+        }
+
         section {
             div {
                 h3 {
